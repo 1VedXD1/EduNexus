@@ -1,0 +1,747 @@
+/* General body and text styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #003366, #4B0082);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust sections to not overlap with fixed navbar */
+section {
+    padding: 80px 20px; /* increased top padding to account for navbar */
+    text-align: center;
+}
+
+/* Logo */
+.logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navbar links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    left: 130px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Search Bar */
+.search-bar input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    outline: none;
+}
+
+/* CTA Button */
+.cta .btn {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #003366;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #ff9900;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-section .login-btn {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 150px;
+}
+
+.profile-section .profile-icon {
+    display: none; /* Visible in mobile view */
+}
+
+.profile-section .profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-section .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-section .dropdown-menu a {
+    padding: 10px 15px;
+    color: #003366;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile-section .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Courses section */
+.courses {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.course-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    color: #003366;
+    padding: 10px 15px;
+}
+
+.course-card p {
+    padding: 0 15px 15px;
+}
+
+.course-card .btn {
+    display: block;
+    padding: 10px 0;
+    margin: 0 15px 15px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.course-card .btn:hover {
+    background-color: #4B0082;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .nav-links,
+    .search-bar,
+    .cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .navbar.active .nav-links,
+    .navbar.active .search-bar,
+    .navbar.active .cta {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #003366;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .navbar.active .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.active .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar.active .search-bar {
+        margin-bottom: 15px;
+    }
+
+    .navbar.active .cta {
+        text-align: center;
+    }
+
+    .profile-section .profile-icon {
+        display: flex;
+    }
+
+    /* Chatbot responsive adjustments */
+    .chat-container {
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    /* Course grid adjustments for mobile */
+    .course-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Use this to inherit color from parent elements */
+}
+
+a:hover {
+    color: #ffcc00; /* Adjust hover color as needed */
+}
+
+.navbar.dark-mode {
+    background: linear-gradient(90deg, #111, #333);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3,
+body.dark-mode p {
+    color: #cfcfcf;
+}
+
+/* Playground Styles */
+.playground {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .playground {
+    background-color: #2e2e2e;
+}
+
+#code-editor-h1, #code-editor-p, #code-editor-a {
+    width: 100%;
+    height: 100px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+body.dark-mode #code-editor-h1, body.dark-mode #code-editor-p, body.dark-mode #code-editor-a {
+    background-color: #3e3e3e;
+    color: #cfcfcf;
+    border-color: #555;
+}
+
+.output {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+body.dark-mode .output {
+    background-color: #3e3e3e;
+    border-color: #555;
+}
+
+/* Quiz Styles */
+.quiz {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .quiz {
+    background-color: #2e2e2e;
+}
+
+.quiz-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* General body and text styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #003366, #4B0082);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust sections to not overlap with fixed navbar */
+section {
+    padding: 80px 20px; /* increased top padding to account for navbar */
+    text-align: center;
+}
+
+/* Logo */
+.logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navbar links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Search Bar */
+.search-bar input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    outline: none;
+}
+
+/* CTA Button */
+.cta .btn {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #003366;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #ff9900;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-section .login-btn {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.profile-section .profile-icon {
+    display: none; /* Visible in mobile view */
+}
+
+.profile-section .profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-section .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-section .dropdown-menu a {
+    padding: 10px 15px;
+    color: #003366;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile-section .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Courses section */
+.courses {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.course-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    color: #003366;
+    padding: 10px 15px;
+}
+
+.course-card p {
+    padding: 0 15px 15px;
+}
+
+.course-card .btn {
+    display: block;
+    padding: 10px 0;
+    margin: 0 15px 15px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.course-card .btn:hover {
+    background-color: #4B0082;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .nav-links,
+    .search-bar,
+    .cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .navbar.active .nav-links,
+    .navbar.active .search-bar,
+    .navbar.active .cta {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #003366;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .navbar.active .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.active .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar.active .search-bar {
+        margin-bottom: 15px;
+    }
+
+    .navbar.active .cta {
+        text-align: center;
+    }
+
+    .profile-section .profile-icon {
+        display: flex;
+    }
+
+    /* Chatbot responsive adjustments */
+    .chat-container {
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    /* Course grid adjustments for mobile */
+    .course-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Use this to inherit color from parent elements */
+}
+
+a:hover {
+    color: #ffcc00; /* Adjust hover color as needed */
+}
+
+.navbar.dark-mode {
+    background: linear-gradient(90deg, #111, #333);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3,
+body.dark-mode p {
+    color: #cfcfcf;
+}
+
+/* Playground Styles */
+.playground {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .playground {
+    background-color: #2e2e2e;
+}
+
+#code-editor-h1, #code-editor-p, #code-editor-a {
+    width: 100%;
+    height: 100px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+body.dark-mode #code-editor-h1, body.dark-mode #code-editor-p, body.dark-mode #code-editor-a {
+    background-color: #3e3e3e;
+    color: #cfcfcf;
+    border-color: #555;
+}
+
+.output {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+body.dark-mode .output {
+    background-color: #3e3e3e;
+    border-color: #555;
+}
+
+/* Quiz Styles */
+.quiz {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .quiz {
+    background-color: #2e2e2e;
+}
+
+.quiz-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Basic Playground Styling */
+.playground {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.playground h3 {
+    margin-bottom: 10px;
+}
+
+.playground textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.playground button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.playground button:hover {
+    background-color: #0056b3;
+}
+
+.output {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    min-height: 50px;
+    margin-top: 10px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .playground {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.dark-mode .output {
+    background-color: #1f1f1f;
+    border-color: #444;
+}
+
+.dark-mode .playground button {
+    background-color: #0056b3;
+}
+
+.dark-mode .playground button:hover {
+    background-color: #003d80;
+}
+
+.dark-mode_btn {
+    position: relative;
+    left: 80px;
+    border-radius: 20px;
+    border: 2px black outset;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course</title>
+    <link rel="stylesheet" href="EN_WebDevelopment.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="EduNexus.html">EduNexus</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+        </ul>
+        <div class="profile-section">
+            <a href="#" class="login-btn">Login</a>
+            <div class="profile-icon">
+                <img src="Profile-EN.png" alt="Profile Icon">
+                <!-- Dropdown menu here -->
+            </div>
+        </div>
+        <button class="dark-mode_btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="content-header">
+        <h1>HTML Elements - Detailed Explanations</h1>
+        <p>Learn about each HTML element with detailed explanations, examples, and interactive playgrounds.</p>
+    </section>
+
+    <section class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#element-head">The &lt;head&gt; Element</a></li>
+            <li><a href="#element-title">The &lt;title&gt; Element</a></li>
+            <li><a href="#element-link">The &lt;link&gt; Element</a></li>
+            <li><a href="#element-meta">The &lt;meta&gt; Element</a></li>
+            <li><a href="#element-nav">The &lt;nav&gt; Element</a></li>
+            <li><a href="#element-form">The &lt;form&gt; Element</a></li>
+            <li><a href="#element-input">The &lt;input&gt; Element</a></li>
+            <li><a href="#element-div">The &lt;div&gt; Element</a></li>
+            <li><a href="#element-span">The &lt;span&gt; Element</a></li>
+            <li><a href="#element-h1">The &lt;h1&gt; Element</a></li>
+            <li><a href="#element-p">The &lt;p&gt; Element</a></li>
+            <li><a href="#element-a">The &lt;a&gt; Element</a></li>
+            <li><a href="#element-button">The &lt;button&gt; Element</a></li>
+        </ul>
+    </section>
+
+    <!-- HTML Element Sections -->
+
+    <section id="element-head">
+        <h2>The &lt;head&gt; Element</h2>
+        <p>The &lt;head&gt; element contains meta-information about the document, such as its title, character set, stylesheets, and scripts.</p>
+        <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="EduNexus.css"&gt;
+&lt;/head&gt;</code></pre>
+        <!-- Interactive Playground for <head> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-head">&lt;head&gt;...&lt;/head&gt;</textarea>
+            <button onclick="runCode('head')">Run</button>
+            <div id="output-head" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-title">
+        <h2>The &lt;title&gt; Element</h2>
+        <p>The &lt;title&gt; element defines the title of the document, which is displayed in the browser's title bar or tab.</p>
+        <pre><code>&lt;title&gt;EduNexus - Learn Web Development&lt;/title&gt;</code></pre>
+        <!-- Interactive Playground for <title> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-title">&lt;title&gt;...&lt;/title&gt;</textarea>
+            <button onclick="runCode('title')">Run</button>
+            <div id="output-title" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-link">
+        <h2>The &lt;link&gt; Element</h2>
+        <p>The &lt;link&gt; element defines the relationship between the current document and an external resource, typically used to link to external stylesheets.</p>
+        <pre><code>&lt;link rel="stylesheet" href="EduNexus.css"&gt;</code></pre>
+        <!-- Interactive Playground for <link> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-link">&lt;link&gt;...&lt;/link&gt;</textarea>
+            <button onclick="runCode('link')">Run</button>
+            <div id="output-link" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-meta">
+        <h2>The &lt;meta&gt; Element</h2>
+        <p>The &lt;meta&gt; element represents metadata about an HTML document, such as character encoding, author, and viewport settings.</p>
+        <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+        <!-- Interactive Playground for <meta> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-meta">&lt;meta&gt;...&lt;/meta&gt;</textarea>
+            <button onclick="runCode('meta')">Run</button>
+            <div id="output-meta" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-nav">
+        <h2>The &lt;nav&gt; Element</h2>
+        <p>The &lt;nav&gt; element defines a set of navigation links. It is typically used for primary navigation within the website.</p>
+        <pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="home.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+        <!-- Interactive Playground for <nav> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-nav">&lt;nav&gt;...&lt;/nav&gt;</textarea>
+            <button onclick="runCode('nav')">Run</button>
+            <div id="output-nav" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-form">
+        <h2>The &lt;form&gt; Element</h2>
+        <p>The &lt;form&gt; element represents a form used to collect user input. It can contain various input elements like text fields, checkboxes, radio buttons, and more.</p>
+        <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" class="input-text"&gt;
+    &lt;input type="submit" value="Submit" class="submit-button"&gt;
+&lt;/form&gt;</code></pre>
+        <!-- Interactive Playground for <form> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-form">&lt;form&gt;...&lt;/form&gt;</textarea>
+            <button onclick="runCode('form')">Run</button>
+            <div id="output-form" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-input">
+        <h2>The &lt;input&gt; Element</h2>
+        <p>The &lt;input&gt; element is used to create interactive controls for forms. Common attributes include type, id, name, and class.</p>
+        <pre><code>&lt;input type="text" id="username" name="username" class="input-text"&gt;</code></pre>
+        <!-- Interactive Playground for <input> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-input">&lt;input&gt;...&lt;/input&gt;</textarea>
+            <button onclick="runCode('input')">Run</button>
+            <div id="output-input" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-div">
+        <h2>The &lt;div&gt; Element</h2>
+        <p>The &lt;div&gt; element is a block-level container used to group elements for styling purposes. It is one of the most commonly used elements in web development.</p>
+        <pre><code>&lt;div class="container"&gt;
+    &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        <!-- Interactive Playground for <div> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-div">&lt;div&gt;...&lt;/div&gt;</textarea>
+            <button onclick="runCode('div')">Run</button>
+            <div id="output-div" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-span">
+        <h2>The &lt;span&gt; Element</h2>
+        <p>The &lt;span&gt; element is an inline container used to group text or inline elements. It is often used for applying styles or scripts to parts of text.</p>
+        <pre><code>&lt;p&gt;This is a &lt;span class="highlight"&gt;highlighted&lt;/span&gt; word.&lt;/p&gt;</code></pre>
+        <!-- Interactive Playground for <span> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-span">&lt;span&gt;...&lt;/span&gt;</textarea>
+            <button onclick="runCode('span')">Run</button>
+            <div id="output-span" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-h1">
+        <h2>The &lt;h1&gt; Element</h2>
+        <p>The &lt;h1&gt; element represents a top-level heading in an HTML document. It is typically used as the main title or heading for a section of content.</p>
+        <pre><code>&lt;h1&gt;Welcome to EduNexus&lt;/h1&gt;</code></pre>
+        <!-- Interactive Playground for <h1> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-h1">&lt;h1&gt;...&lt;/h1&gt;</textarea>
+            <button onclick="runCode('h1')">Run</button>
+            <div id="output-h1" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-p">
+        <h2>The &lt;p&gt; Element</h2>
+        <p>The &lt;p&gt; element represents a paragraph of text. It is a block-level element typically used for structuring text content in a document.</p>
+        <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+        <!-- Interactive Playground for <p> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-p">&lt;p&gt;...&lt;/p&gt;</textarea>
+            <button onclick="runCode('p')">Run</button>
+            <div id="output-p" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-a">
+        <h2>The &lt;a&gt; Element</h2>
+        <p>The &lt;a&gt; element represents a hyperlink, linking to another page or resource. Common attributes include href, target, and rel.</p>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+        <!-- Interactive Playground for <a> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-a">&lt;a&gt;...&lt;/a&gt;</textarea>
+            <button onclick="runCode('a')">Run</button>
+            <div id="output-a" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-button">
+        <h2>The &lt;button&gt; Element</h2>
+        <p>The &lt;button&gt; element represents a clickable button, which can be used to submit forms or trigger events in the browser.</p>
+        <pre><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre>
+        <!-- Interactive Playground for <button> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-button">&lt;button&gt;...&lt;/button&gt;</textarea>
+            <button onclick="runCode('button')">Run</button>
+            <div id="output-button" class="output"></div>
+        </div>
+    </section>
+
+    <script src="EN_WebDevelopment.js"></script>
+
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "vK3-k1Y4cRrsdmUI3bk9M",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="vK3-k1Y4cRrsdmUI3bk9M"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+</body>
+</html>
