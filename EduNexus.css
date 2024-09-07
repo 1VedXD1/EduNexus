@@ -263,3 +263,31 @@ a {
     text-decoration: none;
     font-weight: 700;
 }
+
+/* Hide site content on mobile, but allow the warning message */
+@media screen and (max-width: 1024px) {
+    .navbar, .home, .courses, .about, .blog, .contact, .pricing, footer {
+        display: none;
+    }
+
+    .mobile-warning {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: #ffffff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Hide the warning message on larger screens */
+@media screen and (min-width: 1025px) {
+    .mobile-warning {
+        display: none;
+    }
+}
