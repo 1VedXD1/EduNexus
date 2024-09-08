@@ -377,19 +377,58 @@ section {
     background-color: #4B0082;
 }
 
-/* Allow the site content to be visible on mobile screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cta {
+        text-align: center;
+        width: 100%;
+    }
+
+    .course-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .profile-section {
+        flex-direction: column;
+    }
+}
+
+/* Ensure the site looks good on both mobile and larger screens */
 @media screen and (max-width: 1024px) {
     .navbar, .home, .courses, .about, .blog, .contact, .pricing, footer {
         display: block;
     }
 
-    /* Hide the mobile warning message */
     .mobile-warning {
         display: none;
     }
 }
 
-/* Ensure the site looks good on larger screens as well */
 @media screen and (min-width: 1025px) {
     .mobile-warning {
         display: none;
