@@ -269,6 +269,7 @@ a {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        display: inline-block;
     }
 
     .nav-links {
@@ -308,16 +309,6 @@ a {
 /* Ensure the site looks good on both mobile and larger screens */
 @media screen and (max-width: 1024px) {
     .navbar, .home, .courses, .about, .blog, .contact, .pricing, footer {
-        display: block;
-    }
-
-    .mobile-warning {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .mobile-warning {
-        display: none;
+        display: inline-block;
     }
 }
