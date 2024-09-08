@@ -377,78 +377,25 @@ section {
     background-color: #4B0082;
 }
 
-/* Responsive Mobile styles */
-@media screen and (max-width: 768px) {
-    .navbar,
-    .search-bar,
-    .cta {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .search-bar {
-        margin-bottom: 15px;
-    }
-
-    .cta {
-        text-align: center;
-    }
-
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .navbar.active .nav-links,
-    .navbar.active .search-bar,
-    .navbar.active .cta {
+/* Allow the site content to be visible on mobile screens */
+@media screen and (max-width: 1024px) {
+    .navbar, .home, .courses, .about, .blog, .contact, .pricing, footer {
         display: block;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #003366;
-        width: 100%;
-        padding: 20px 0;
     }
 
-    .navbar.active .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar.active .nav-links li {
-        margin: 10px 0;
-    }
-
-    .navbar.active .search-bar {
-        margin-bottom: 15px;
-    }
-
-    .navbar.active .cta {
-        text-align: center;
-    }
-
-    /* Course grid adjustments for mobile */
-    .course-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .course-card {
-        width: 90%; /* Adjust card width on mobile */
-        max-width: 100%; /* Allow card to take full width */
+    /* Hide the mobile warning message */
+    .mobile-warning {
+        display: none;
     }
 }
+
+/* Ensure the site looks good on larger screens as well */
+@media screen and (min-width: 1025px) {
+    .mobile-warning {
+        display: none;
+    }
+}
+
 
 /* Ensure no horizontal scrolling on small screens */
 body {
