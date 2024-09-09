@@ -313,3 +313,10 @@ a {
         display: none;
     }
 }
+
+.course-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
