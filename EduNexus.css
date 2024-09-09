@@ -229,6 +229,16 @@ section {
         flex-direction: column;
     }
 }
+
+#Early_Access_Plan {
+    background-color: #ff4500;
+}
+
+#Early_Access_Plan:hover {
+    background-color: #e63e00;
+}
+
+
 #Coming_soon {
     background-color: #555;
 }
