@@ -189,6 +189,22 @@ section {
     background-color: #4B0082;
 }
 
+.course-card .btn_btnBeta {
+    background-color: #4ef500;
+    color: #000;
+    display: block;
+    padding: 10px 0;
+    margin: 0 15px 15px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.course-card .btn_btnBeta:hover {
+    background-color: #2f9600;
+    color: #ddd;
+}
+
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -238,13 +254,13 @@ section {
     background-color: #e63e00;
 }
 
-
+/* Remove conflicting ID style */
 #Coming_soon {
-    background-color: #555;
+    background-color: #555; /* Gray (Not needed since you're using btnBeta class) */
 }
 
 #Coming_soon:hover {
-    background-color: #202020;
+    background-color: #202020; /* Darker gray (Not needed since you're using btnBeta class) */
 }
 
 a {
