@@ -22,7 +22,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #003366, #4B0082);
+    background: linear-gradient(90deg, #002952, #1D2261, #3A1B70, #571580, #730E8F, #90079E, #ad00ad);
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -190,7 +190,7 @@ section {
 }
 
 .course-card .btn_btnBeta {
-    background-color: #4ef500;
+    background-color: #ffcc00;
     color: #000;
     display: block;
     padding: 10px 0;
@@ -201,8 +201,7 @@ section {
 }
 
 .course-card .btn_btnBeta:hover {
-    background-color: #2f9600;
-    color: #ddd;
+    background-color: #ff9900;
 }
 
 @media screen and (max-width: 768px) {

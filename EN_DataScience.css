@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #003366;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcc00; /* Accent color for hover */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #4B0082;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 24px;
+}
+
+/* Lessons Section */
+.lessons {
+    padding: 20px;
+}
+
+.lessons h2 {
+    font-size: 32px;
+    color: #003366;
+}
+
+.lesson-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-card h3 {
+    font-size: 24px;
+    color: #4B0082;
+}
+
+.lesson-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Subjects Section */
+.subjects {
+    padding: 20px;
+}
+
+.subjects h2 {
+    font-size: 32px;
+    color: #003366;
+}
+
+.subjects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subjects li {
+    font-size: 18px;
+    color: #4B0082;
+    margin-bottom: 10px;
+}
