@@ -12,36 +12,41 @@
             <a href="index.html">EduNexus</a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#courses">Courses</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#blog">Blog</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#subjects">Subjects</a></li>
         </ul>
+        
+        <div class="cta">
+            <a href="#" class="btn">Enroll Now</a>
+        </div>
         <div class="profile-section">
             <a href="#" class="login-btn">Login</a>
             <div class="profile-icon">
-                <img src="Profile-EN.png" alt="Profile Icon">
-                <!-- Dropdown menu here -->
+                <img src="Profile-EN.png" alt="Profile">
+                <div class="dropdown-menu">
+                    <a href="#">Dashboard</a>
+                    <a href="#">My Courses</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
             </div>
         </div>
-        <button class="dark-mode_btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <div class="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </nav>
-
-    <section class="content-header">
-        <h1>HTML Elements - Detailed Explanations</h1>
-        <p>Learn about each HTML element with detailed explanations, examples, and interactive playgrounds.</p>
-    </section>
+    
+    <header id="hero-section" class="hero-section">
+        <h1>Welcome to Web Development</h1>
+        <p>Unlock the art of web development</p>
+    </header>
 
     <section class="toc">
-        <h2>Table of Contents</h2>
-        <ul>
+        <h2 class="toch2">Table of Contents</h2>
+        <ul class="black">
             <li><a href="#element-head">The &lt;head&gt; Element</a></li>
             <li><a href="#element-title">The &lt;title&gt; Element</a></li>
             <li><a href="#element-link">The &lt;link&gt; Element</a></li>
