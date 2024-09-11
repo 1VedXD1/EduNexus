@@ -137,6 +137,16 @@ section {
     background-color: #f0f0f0;
 }
 
+.home {
+    background-color: #4B0082;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home h1,.home p,.home a {
+    color: white;
+}
+
 /* Courses section */
 .courses {
     background-color: #fff;

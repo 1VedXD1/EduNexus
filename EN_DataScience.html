@@ -8,34 +8,106 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="logo">EduNexus</a>
+        <div class="logo">
+            <a href="#">EduNexus</a>
+        </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#subjects">Subjects</a></li>
         </ul>
+        
+        <div class="cta">
+            <a href="#" class="btn">Enroll Now</a>
+        </div>
+        <div class="profile-section">
+            <a href="#" class="login-btn">Login</a>
+            <div class="profile-icon">
+                <img src="Profile-EN.png" alt="Profile">
+                        <div class="dropdown-menu">
+                <a href="#">Dashboard</a>
+                    <a href="#">My Courses</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+<div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
-    <header class="hero-section">
+    <header id="hero-section" class="hero-section">
         <h1>Welcome to Data Science</h1>
         <p>Unlock the power of data with our comprehensive Data Science course.</p>
     </header>
 
-    <section class="lessons">
-        <h2>Lessons</h2>
-        <div class="lesson-card">
-            <h3>Lesson 1: Introduction to Data Science</h3>
-            <p>Learn the basics of data science, including key concepts and tools.</p>
+    <section id="lesson-1" class="lesson">
+        <h2>Lesson 1: Introduction to Data Science</h2>
+        <p>Learn the basics of data science, including key concepts and tools.</p>
+
+        <h3>Example: Simple Data Analysis</h3>
+        <p>Here’s how you can calculate the sum of a dataset in Python:</p>
+
+        <div class="code-editor">
+            <textarea id="code-editor-1" class="code-area" readonly>
+# Example: Simple Data Analysis
+data = [1, 2, 3, 4, 5]
+
+# Calculate the sum
+total = sum(data)
+print(total)
+            </textarea>
+            <button onclick="runCode('code-editor-1', 'output-1')">Run Code</button>
         </div>
-        <div class="lesson-card">
-            <h3>Lesson 2: Data Wrangling</h3>
-            <p>Understand how to clean and prepare data for analysis.</p>
-        </div>
-        <!-- Add more lessons here -->
+        <pre id="output-1" class="output-area"></pre>
+
+        <h3>Quiz: Understanding Data Types</h3>
+        <p>Which data type is used for a list of numbers?</p>
+        <form id="quiz-form-1" onsubmit="return checkQuizAnswer(event, 'correct-answer-1', 'feedback-1')">
+            <label><input type="radio" name="quiz-1" value="A"> String</label><br>
+            <label><input type="radio" name="quiz-1" value="B"> Integer</label><br>
+            <label><input type="radio" name="quiz-1" value="C"> List</label><br>
+            <button type="submit">Submit Answer</button>
+        </form>
+        <div id="feedback-1" class="feedback"></div>
     </section>
 
-    <section class="subjects">
+    <!-- Lesson 2: Data Wrangling -->
+    <section id="lesson-2" class="lesson">
+        <h2>Lesson 2: Data Wrangling</h2>
+        <p>Understand how to clean and prepare data for analysis.</p>
+
+        <h3>Example: Filtering Data in Python</h3>
+        <p>Here’s how you can filter out even numbers from a list in Python:</p>
+
+        <div class="code-editor">
+            <textarea id="code-editor-2" class="code-area" readonly>
+# Example: Filtering Data
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Filter even numbers
+even_numbers = [num for num in numbers if num % 2 == 0]
+print(even_numbers)
+            </textarea>
+            <button onclick="runCode('code-editor-2', 'output-2')">Run Code</button>
+        </div>
+        <pre id="output-2" class="output-area"></pre>
+
+        <h3>Quiz: Filtering Odd Numbers</h3>
+        <p>Which code snippet correctly filters out odd numbers?</p>
+        <form id="quiz-form-2" onsubmit="return checkQuizAnswer(event, 'correct-answer-2', 'feedback-2')">
+            <label><input type="radio" name="quiz-2" value="A"> even_numbers = [num for num in numbers if num % 2 != 0]</label><br>
+            <label><input type="radio" name="quiz-2" value="B"> odd_numbers = [num for num in numbers if num % 2 != 0]</label><br>
+            <label><input type="radio" name="quiz-2" value="C"> numbers = [num for num in numbers if num % 2 != 0]</label><br>
+            <button type="submit">Submit Answer</button>
+        </form>
+        <div id="feedback-2" class="feedback"></div>
+    </section>
+
+    <section id="subjects" class="subjects">
         <h2>Subjects</h2>
         <ul>
             <li>Statistics</li>
