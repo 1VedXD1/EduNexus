@@ -6,6 +6,7 @@
     <title>EduNexus</title>
     <link rel="stylesheet" href="EduNexus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -59,13 +60,13 @@
                     <img src="web development.jpg" alt="Web Development">
                     <h3><i class="fa-solid fa-code"></i> Web Development</h3>
                     <p>Learn how to build dynamic websites and web apps.</p>
-                    <a href="EN_Web Development.html" class="btn">Enroll Now</a>
+                    <a href="EN_Web Development.html" class="btn">Enroll Now!</a>
                 </div>
                 <div class="course-card">
                     <img src="Data science.jpg" alt="Data Science">
                     <h3><i class="fa-solid fa-database"></i> Data Science</h3>
                     <p>Master data analysis and machine learning techniques.</p>
-                    <a href="EN_DataScience.html" class="btn_btnBeta"><i class="fa-solid fa-hourglass-half"></i> Beta</a>
+                    <a href="EN_DataScience.html" class="btn">Enroll Now!</a>
                 </div>                
                 <div class="course-card">
                     <img src="Digital marketing.jpg" alt="Digital Marketing">
@@ -87,11 +88,24 @@
                     <a href="#" class="btn" id="Coming_soon"><i class="fa-solid fa-lock"></i> Coming soon!</a>
                 </div>
 
-                <div class="course-card">
-                    <img src="Early-access.jpg" alt="Early Access Plan">
-                    <h3>Advance Learning</h3>
-                    <p>Get our Early Access Plan for advanced learning opportunities.</p>
-                    <a href="#" class="btn" id="Early_Access_Plan"><i class="fa-solid fa-rocket"></i> Early Access</a>
+                <div id="paywall-container">
+                    <div id="paywall-content" class="hidden">
+                        <div class="course-card">
+                            <img src="Early-access.jpg" alt="Early Access Plan">
+                            <h3>Advance Learning</h3>
+                            <p>Get our Early Access Plan for advanced learning opportunities.</p>
+                            <a href="#" class="btn" id="Early_Access_Plan"><i class="fa-solid fa-rocket"></i> Early Access</a>
+                        </div>
+                        <h2>Exclusive Course Content</h2>
+                        <p>This content is only available to paying members.</p>
+                        <!-- Add more protected content here -->
+                    </div>
+                
+                    <div id="paywall-message">
+                        <h2>Unlock Premium Content</h2>
+                        <p>Subscribe to access this course and much more!</p>
+                        <a href="#pricing" class="btn">View Pricing Plans</a>
+                    </div>
                 </div>
                 
                 <div class="course-card">
@@ -155,7 +169,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 EduNexus. All rights reserved.</p>
+        <p class="footer-p">&copy; 2024 EduNexus. All rights reserved.</p>
     </footer>
 </body>
 </html>
