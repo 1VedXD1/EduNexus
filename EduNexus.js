@@ -94,3 +94,8 @@ function checkUserSubscription() {
         console.error('Error checking subscription:', error);
     });
 }
+
+app.get('/about', (req, res) => {
+    res.send('About Us page');
+  });
+  
