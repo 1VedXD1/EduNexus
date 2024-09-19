@@ -46,10 +46,11 @@
     <section class="toc">
         <h2 id="toch2" class="toch2">Table of Contents</h2>
         <ul class="black">
-            <li><a href="#element-head">The &lt;head&gt; Element</a></li>
-            <li><a href="#element-title">The &lt;title&gt; Element</a></li>
-            <li><a href="#element-link">The &lt;link&gt; Element</a></li>
-            <li><a href="#element-meta">The &lt;meta&gt; Element</a></li>
+            <li><a href="#element-header">The &lt;header&gt; Element</a></li>
+            <li><a href="#element-section">The &lt;section&gt; Element</a></li>
+            <li><a href="#element-article">The &lt;article&gt; Element</a></li>
+            <li><a href="#element-figure">The &lt;figure&gt; Element</a></li>
+            <li><a href="#element-footer">The &lt;footer&gt; Element</a></li>
             <li><a href="#element-nav">The &lt;nav&gt; Element</a></li>
             <li><a href="#element-form">The &lt;form&gt; Element</a></li>
             <li><a href="#element-input">The &lt;input&gt; Element</a></li>
@@ -107,54 +108,89 @@
         </div>
     </section>
 
-    <section id="element-meta">
-        <h2>The &lt;meta&gt; Element</h2>
-        <p>The &lt;meta&gt; element represents metadata about an HTML document, such as character encoding, author, and viewport settings.</p>
-        <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
-        <!-- Interactive Playground for <meta> -->
+    <section id="element-header">
+        <h2>The &lt;header&gt; Element</h2>
+        <p>The &lt;header&gt; element represents introductory content or a set of navigational links for a section or page.</p>
+        <pre><code>&lt;header&gt;
+        &lt;h1&gt;Welcome to EduNexus&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href="#home"&gt;Home&lt;/a&gt; | &lt;a href="#courses"&gt;Courses&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;</code></pre>
+        <!-- Interactive Playground for <header> -->
         <div class="playground">
             <h3>Try it Yourself</h3>
-            <textarea id="code-editor-meta">&lt;meta&gt;...&lt;/meta&gt;</textarea>
-            <button onclick="runCode('meta')">Run</button>
-            <div id="output-meta" class="output"></div>
+            <textarea id="code-editor-header">&lt;header&gt;...&lt;/header&gt;</textarea>
+            <button onclick="runCode('header')">Run</button>
+            <div id="output-header" class="output"></div>
         </div>
     </section>
-
-    <section id="element-nav">
-        <h2>The &lt;nav&gt; Element</h2>
-        <p>The &lt;nav&gt; element defines a set of navigation links. It is typically used for primary navigation within the website.</p>
-        <pre><code>&lt;nav&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="home.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-        <!-- Interactive Playground for <nav> -->
+    
+    <section id="element-article">
+        <h2>The &lt;article&gt; Element</h2>
+        <p>The &lt;article&gt; element represents independent content, such as a blog post, news article, or forum post.</p>
+        <pre><code>&lt;article&gt;
+        &lt;h2&gt;How to Learn Web Development&lt;/h2&gt;
+        &lt;p&gt;Web development involves creating websites and web applications.&lt;/p&gt;
+    &lt;/article&gt;</code></pre>
+        <!-- Interactive Playground for <article> -->
         <div class="playground">
             <h3>Try it Yourself</h3>
-            <textarea id="code-editor-nav">&lt;nav&gt;...&lt;/nav&gt;</textarea>
-            <button onclick="runCode('nav')">Run</button>
-            <div id="output-nav" class="output"></div>
+            <textarea id="code-editor-article">&lt;article&gt;...&lt;/article&gt;</textarea>
+            <button onclick="runCode('article')">Run</button>
+            <div id="output-article" class="output"></div>
         </div>
     </section>
-
-    <section id="element-form">
-        <h2>The &lt;form&gt; Element</h2>
-        <p>The &lt;form&gt; element represents a form used to collect user input. It can contain various input elements like text fields, checkboxes, radio buttons, and more.</p>
-        <pre><code>&lt;form action="/submit" method="post"&gt;
-    &lt;label for="name"&gt;Name:&lt;/label&gt;
-    &lt;input type="text" id="name" name="name" class="input-text"&gt;
-    &lt;input type="submit" value="Submit" class="submit-button"&gt;
-&lt;/form&gt;</code></pre>
-        <!-- Interactive Playground for <form> -->
+    
+    <section id="element-section">
+        <h2>The &lt;section&gt; Element</h2>
+        <p>The &lt;section&gt; element defines a thematic grouping of content, typically with a heading.</p>
+        <pre><code>&lt;section&gt;
+        &lt;h2&gt;Why Choose EduNexus?&lt;/h2&gt;
+        &lt;p&gt;EduNexus offers a comprehensive platform for learning web development.&lt;/p&gt;
+    &lt;/section&gt;</code></pre>
+        <!-- Interactive Playground for <section> -->
         <div class="playground">
             <h3>Try it Yourself</h3>
-            <textarea id="code-editor-form">&lt;form&gt;...&lt;/form&gt;</textarea>
-            <button onclick="runCode('form')">Run</button>
-            <div id="output-form" class="output"></div>
+            <textarea id="code-editor-section">&lt;section&gt;...&lt;/section&gt;</textarea>
+            <button onclick="runCode('section')">Run</button>
+            <div id="output-section" class="output"></div>
         </div>
     </section>
-
+    
+    <section id="element-figure">
+        <h2>The &lt;figure&gt; Element</h2>
+        <p>The &lt;figure&gt; element is used for content that is referenced from the main flow of the document, like an image or diagram.</p>
+        <pre><code>&lt;figure&gt;
+        &lt;img src="webdev.jpg" alt="Web Development"&gt;
+        &lt;figcaption&gt;Web Development Diagram&lt;/figcaption&gt;
+    &lt;/figure&gt;</code></pre>
+        <!-- Interactive Playground for <figure> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-figure">&lt;figure&gt;...&lt;/figure&gt;</textarea>
+            <button onclick="runCode('figure')">Run</button>
+            <div id="output-figure" class="output"></div>
+        </div>
+    </section>
+    
+    <section id="element-footer">
+        <h2>The &lt;footer&gt; Element</h2>
+        <p>The &lt;footer&gt; element represents the footer of a section or page, containing information like the author or related links.</p>
+        <pre><code>&lt;footer&gt;
+        &lt;p&gt;© 2024 EduNexus. All rights reserved.&lt;/p&gt;
+        &lt;nav&gt;
+            &lt;a href="#privacy"&gt;Privacy&lt;/a&gt; | &lt;a href="#terms"&gt;Terms&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;</code></pre>
+        <!-- Interactive Playground for <footer> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-footer">&lt;footer&gt;...&lt;/footer&gt;</textarea>
+            <button onclick="runCode('footer')">Run</button>
+            <div id="output-footer" class="output"></div>
+        </div>
+    </section>
     <section id="element-input">
         <h2>The &lt;input&gt; Element</h2>
         <p>The &lt;input&gt; element is used to create interactive controls for forms. Common attributes include type, id, name, and class.</p>

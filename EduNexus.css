@@ -193,6 +193,10 @@ section {
     text-decoration: none;
 }
 
+.ely-btn{
+    background-color: orange;
+}
+
 .course-card .btn:hover {
     background-color: #4B0082;
 }
@@ -215,37 +219,6 @@ section {
 /* Hide the protected content by default */
 .hidden {
     display: none;
-}
-
-/* Paywall message styling */
-#paywall-message {
-    text-align: center;
-    padding: 20px 5px 280px 5px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    border-top: 2px inset #be04cf;
-    border-left: 2px inset #be04cf;
-    border-bottom: 2px inset #5501f0;
-    border-right: 2px inset #5501f0;
-    box-shadow: 0 0 10px #00000075;
-}
-
-
-#Early_Access_Plan {
-    background-color: #ff4500;
-}
-
-#Early_Access_Plan:hover {
-    background-color: #e63e00;
-}
-
-/* Remove conflicting ID style */
-#Coming_soon {
-    background-color: #555; /* Gray (Not needed since you're using btnBeta class) */
-}
-
-#Coming_soon:hover {
-    background-color: #202020; /* Darker gray (Not needed since you're using btnBeta class) */
 }
 
 a {
