@@ -1,4 +1,4 @@
-// JavaScript for the Navbar Toggle
+// Optional buttons of Navbar
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar');
 const navLinks = document.querySelector('.nav-links');
@@ -19,13 +19,13 @@ profileIcon.addEventListener('click', () => {
     dropdownMenu.classList.toggle('active');
 });
 
-// Function to run HTML code in the playground
+// This is Playground code
 function runCode(elementId) {
     const code = document.getElementById(`code-editor-${elementId}`).value;
     const output = document.getElementById(`output-${elementId}`);
     
     try {
-        output.innerHTML = code; // Render the HTML code in the output div
+        output.innerHTML = code;
     } catch (e) {
         output.textContent = `Error: ${e.message}`;
     }
