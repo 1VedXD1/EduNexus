@@ -216,6 +216,14 @@ section {
     background-color: #ff9900;
 }
 
+#Coming_soon {
+    background-color: #555;
+}
+
+#Coming_soon:hover {
+    background-color: #2b2b2b;
+}
+
 /* Hide the protected content by default */
 .hidden {
     display: none;
